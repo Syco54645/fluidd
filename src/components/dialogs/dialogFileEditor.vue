@@ -23,6 +23,16 @@
         </btn>
         <v-toolbar-title>{{ filename }}</v-toolbar-title>
         <v-spacer></v-spacer>
+        <v-btn
+          :elevation="2"
+          dark
+          color="gray"
+          class="ml-2"
+          target="_blank"
+          href="https://www.klipper3d.org/Config_Reference.html"
+        >
+          Config Reference
+        </v-btn>
         <btn
           v-if="!readonly && unsavedChanges"
           :elevation="2"
